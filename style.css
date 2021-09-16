@@ -1,0 +1,27 @@
+body {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+.blur-loader {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    background-color: teal;
+    position: relative;
+    animation:blur 2s infinite ease-in-out;
+
+}
+
+@keyframes blur {
+    0%, 100% {
+        filter:blur(0);
+    }
+    50% {
+        filter:blur(15px);
+    }
+}
